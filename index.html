@@ -5,37 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Engineering</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Welcome to HTML</h1>
-    <header id="headerID">
+    <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#movie">Favorite Movie</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#about">About Me</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="contact">
-            <h1>Say Something about me</h1>
-            <label for="name">Name: </label><input type="text" required="" placeholder="Enter username">
-            <hr>
-            <label for="telephone">Telephone: </label><input type="tel" required="" placeholder="Enter Telephone">
-            <hr>
-            <label for="email">E-Mail: </label><input type="email" required="" placeholder="Enter Email Address">
-            <hr>
-            <label for="message">Message</label><textarea name="message" id="messageing"></textarea>
-            <hr>
-            <button>Submit</button>
+        <section id="services" class="section">
+            <h2>My Services</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Web Development</th>
+                        <th>Programming</th>
+                        <th>Functional Programming</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.youtube.com/watch?v=HcOc7P5BMi4&list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i"
+                                target="_blank">HTML</a></td>
+                        <td><a href="https://www.coursera.org/learn/programming-fundamentals" target="_blank">PF</a>
+                        </td>
+                        <td><a href="https://www.coursera.org/learn/programming-fundamentals" target="_blank">Scala</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/watch?v=ESnrn1kAD4E" target="_blank">CSS</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=HcOc7P5BMi4&list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i"
+                                target="_blank">OOP</a></td>
+                        <td><a href="https://www.coursera.org/learn/programming-fundamentals" target="_blank">Lisp</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/watch?v=ajdRvxDWH4w&list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW"
+                                target="_blank">JS</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=VaSjiJMrq24&list=PLjVLYmrlmjGdRs1sGqRrTE-EMraLclJga"
+                                target="_blank">Data Science</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=Vgu82wiiZ90&list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV"
+                                target="_blank">Haskell</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
+        <section id="movie" class="section">
+            <h2>My Favorite Movie</h2>
+            <div class="movie-container">
+                <p>One of my all-time favorite movies is "Avengers Endgame". The storyline, visuals, and overall
+                    concept are
+                    absolutely captivating! Here's the trailer for you to enjoy.</p>
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hA6hldpSTF8" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section">
+            <h2>Contact Me!</h2>
+            <form>
+                <label for="name">Name</label><input type="text" required="">
+                <label for="telephone">Telephone</label><input type="tel" required="">
+                <label for="email">E-Mail</label><input type="email" required="">
+                <label for="message">Message</label><textarea name="message" id="messageing"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; All Rights Reserved to Rockstar</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <a href="https://www.upwork.com/freelancers/hasnainn31" target="_blank"><img
+                    src="GitHub Profile Picture.png" class="myIMG" alt=""></a>
+            <p>Hi! I am Muhammad Hasnain and Offering expert Web Development and Programming courses to help you level
+                up
+                your skills. Start learning
+                today!</p>
+            <p>&copy;Copyright &reg;All Rights Reserved to <img class="rockstar" src="rockstar.jpg" alt=""></p>
+            <div class="imgage">
+                <img src="fb.png" alt="Facebook">
+                <img src="insta.webp" alt="Instagram">
+                <img src="twitter.avif" alt="Twitter">
+                <img src="yt-removebg-preview.png" alt="YouTube">
+            </div>
+        </section>
     </footer>
 </body>
 
