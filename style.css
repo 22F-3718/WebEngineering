@@ -53,6 +53,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -75,7 +76,13 @@ table td {
 }
 
 table th {
-    background-color: green;
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+}
+
+.xyz th {
+    background-color: #6495ED;
     color: white;
     font-weight: bold;
 }
